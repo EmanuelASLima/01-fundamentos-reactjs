@@ -48,13 +48,7 @@
   color: var(--gray-400);
   line-height: 1.6;
 }
-.author img {
-  box-sizing: initial;
-  width: 5rem;
-  border-radius: 8px;
-  border: 3px solid var(--gray-800);
-  outline: 2px solid var(--green-500);
-}
+
 .commentForm {
   width: 100%;
   margin-top: 1.5rem;
