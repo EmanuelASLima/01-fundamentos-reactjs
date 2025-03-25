@@ -1,12 +1,115 @@
-# React + Vite
+# Fundamentos do React.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém React.js, com foco nos fundamentos dessa biblioteca. O objetivo é entender os conceitos básicos e principais funcionalidades do React, além de criar uma base sólida para futuros projetos mais complexos.
+O projeto em questão é um feed rede social, clone de facebook. Commet Feed.                                                                  
+             
+                            @@@@@@@@@@@       ::::::::                
+                 ::::   @@@@@@@@@@@@@@:::@@   :::::                   
+                 :::: @@@@@@@@@@@@@@%::@@@@@@::::                     
+                    @@@@@@::@@@@@@@::#@@@*::@:%  :::::                
+                   @@@@@@@@@@@@@@:::@@@:::::@:::::::                  
+                  @@@@@@@@@@@@@@::@@@:::++::::++:::                   
+                 @@@@@@@@@@@@@@@@@@:::+++++++++::@                    
+                @@@@@@@@@@-::#@@*::=++++::+++=::@@@::                 
+                @@@@@@@@*::+:#:::+++++:::+++::*@@::::    :::          
+                @@@@@@@::+++:::++++++++++++::@@@::-:   :::            
+                @@@@@::=++++++++-:::+++++:::@@*::%:: :::              
+                @@@:::+++++++::::+:-++++::@@@@::%=::                  
+                 :::+++++:+++::+:::++++:::::@@::::@   ::              
+               :::+++++:::+++:::+++++++++::@@@:-@@:::::               
+             :::+++++:::::++++++=::++++::%@@@@*::::::                 
+            ::+++++:::%::+++++:::++++:::@@@@@::%:::                   
+           ::++++=::%%::-:::+++++++=::@@@@@@@*:::                     
+          ::++++::%%%%-:+%::++++++::+@@@@@@@                          
+         ::+++::-%%%%%%%%#:-++++++++-:::::             :::::          
+         ::+++::%%%%%%%%%::::::::++++:::               ::  ::         
+         ::+++:#%%%%%%%%%*%%=::++++-::                  ::::          
+          ::++::%%%%%%%%%%%::+++++::          :  :                    
+          :::++::%%%%%%%%::=++++:::           ::::                    
+           :::++::::::::::++++:::             ::::                    
+             :::++++++++++++:::                                       
+               :::::::::::::                                          
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto explora os fundamentos do React.js, cobrindo os seguintes tópicos:
 
-## Expanding the ESLint configuration
+- **Componentes**: Estruturação e reutilização de componentes.
+- **Props**: Como passar dados entre componentes.
+- **Estado (State)**: Gerenciamento de estado dentro de componentes.
+- **Eventos**: Manipulação de eventos no React.
+- **Renderização Condicional**: Exibição de componentes com base em condições.
+- **Listas e Chaves**: Renderização de listas de elementos dinamicamente.
+- **Formulários**: Manipulação de formulários e seus estados.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este repositório tem o propósito de proporcionar uma visão geral e prática dos conceitos fundamentais de React.js para iniciantes.
+
+## Tecnologias Utilizadas
+
+- React.js
+- JavaScript (ES6+)
+- HTML
+- CSS (para estilo básico)
+
+## Funcionalidades
+
+Neste repositório, você encontrará exemplos práticos abordando os conceitos fundamentais do React, como:
+
+- **Componentes funcionais e de classe**
+- **Props e State**
+- **Eventos e manipulação de formulários**
+- **Renderização condicional e listas**
+- **Hooks (useState, useEffect)**
+
+## Como Executar o Projeto
+
+1. Clone este repositório para o seu ambiente local:
+   ```bash
+   git clone https://github.com/EmanuelASLima/01-fundamentos-reactjs.git
+
+
+
+2. Acesse o diretório do projeto:
+   ```bash
+   cd 01-fundamentos-reactjs
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Execute o servidor de desenvolvimento:
+   ```bash
+   npm start
+   ```
+
+5. Abra o navegador e acesse `http://localhost:3000` para visualizar o projeto em execução.
+
+## Como Contribuir
+
+Se você deseja contribuir para este projeto, siga os passos abaixo:
+
+1. Fork este repositório.
+2. Crie uma branch com suas modificações:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Faça suas alterações e commite:
+   ```bash
+   git commit -m 'Adiciona nova funcionalidade'
+   ```
+4. Envie suas alterações para o repositório remoto:
+   ```bash
+   git push origin minha-feature
+   ```
+
+5. Abra um Pull Request detalhando suas alterações.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Acknowledgments
+
+- **React.js**: Biblioteca fundamental para o desenvolvimento de interfaces de usuário modernas.
