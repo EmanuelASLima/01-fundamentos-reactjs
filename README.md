@@ -1,5 +1,7 @@
 # Fundamentos do React.js
 
+# AVISO !!! ESTE PROJETO ESTÁ SETADO PARA REACT.JS
+
 Este repositório contém React.js, com foco nos fundamentos dessa biblioteca. O objetivo é entender os conceitos básicos e principais funcionalidades do React, além de criar uma base sólida para futuros projetos mais complexos.
 O projeto em questão é um feed rede social, clone de facebook. Commet Feed.                                                                  
              
