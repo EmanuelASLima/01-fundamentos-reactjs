@@ -48,25 +48,15 @@ export default function Post({ author, publishedAt, content }) {
       <div className={styles.content}>
         {content.map((line) => {
           if (line.type == "paragraph") {
-            return <p>{line.content}</p>;
+            return <p key={line.content}>{line.content}</p>;
           } else if (line.type == "link") {
             return (
-              <p>
+              <p key={line.content}>
                 <a href="#">{line.content}</a>
               </p>
             );
           }
         })}
-        <p>
-          <a href="#">Possas crer!</a>
-        </p>
-        <p>
-          <a href="#">Vai dar certo meu chapa!</a>
-        </p>
-        <p>
-          <a href="#">Tamo Junto!!!</a>{" "}
-          <a href="#">Clique aqui para o nosso site</a> <a href="#">#github</a>{" "}
-        </p>
       </div>
 
       <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
@@ -83,7 +73,7 @@ export default function Post({ author, publishedAt, content }) {
       </form>
       <div className={styles.commentList}>
         {comments.map((comment) => {
-          return <Comment content={comment} />;
+          return <Comment key={comment} content={comment} />;
         })}
       </div>
     </article>
