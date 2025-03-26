@@ -26,6 +26,7 @@ export default function Post({ author, publishedAt, content }) {
     setNewCommentText("");
   }
   function handleNewCommentChenge() {
+    event.target.setCustomValidity("");
     setNewCommentText(event.target.value);
   }
 
@@ -35,6 +36,12 @@ export default function Post({ author, publishedAt, content }) {
     });
     setComments(commentsWithoutDeletedeOne);
   }
+
+  function handleNewCommentInvalid() {
+    event.target.setCustomValidity("Escreva algo para comentar");
+  }
+
+  const isNewCommentEmpty = newCommentText.length == 0;
 
   return (
     <article className={styles.post}>
@@ -75,9 +82,13 @@ export default function Post({ author, publishedAt, content }) {
           placeholder="Comente aqui!"
           value={newCommentText}
           onChange={handleNewCommentChenge}
+          onInvalid={handleNewCommentInvalid}
+          required
         />
         <footer>
-          <button type="submit">Publicar</button>
+          <button type="submit" disabled={isNewCommentEmpty}>
+            Publicar
+          </button>
         </footer>
       </form>
       <div className={styles.commentList}>
