@@ -18,6 +18,7 @@ export default function Post({ author, publishedAt, content }) {
     locale: ptBR,
     addSuffix: true,
   });
+
   function handleCreateNewComment() {
     event.preventDefault();
 
@@ -27,6 +28,14 @@ export default function Post({ author, publishedAt, content }) {
   function handleNewCommentChenge() {
     setNewCommentText(event.target.value);
   }
+
+  function deleteComment(commentToDelete) {
+    const commentsWithoutDeletedeOne = comments.filter((comment) => {
+      return comment != commentToDelete;
+    });
+    setComments(commentsWithoutDeletedeOne);
+  }
+
   return (
     <article className={styles.post}>
       <header>
@@ -73,7 +82,13 @@ export default function Post({ author, publishedAt, content }) {
       </form>
       <div className={styles.commentList}>
         {comments.map((comment) => {
-          return <Comment key={comment} content={comment} />;
+          return (
+            <Comment
+              key={comment}
+              content={comment}
+              onDeleteComment={deleteComment}
+            />
+          );
         })}
       </div>
     </article>
